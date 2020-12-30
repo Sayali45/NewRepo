@@ -1,0 +1,4 @@
+name: Issue Dashboard
+uses: ethomson/issue-dashboard@v1.0.2
+   script: 
+    - "echo \"Hello World!\""
