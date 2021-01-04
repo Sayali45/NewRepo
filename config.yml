@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-version: 2.1
 
 orbs:
   maven: circleci/maven@0.0.12
@@ -7,14 +6,28 @@ orbs:
 workflows:
   maven_test:
     jobs:
+      - run_test
       - maven/test # checkout, build, test, and upload test results
 =======
 name: Issue Dashboard
 uses: ethomson/issue-dashboard@v1.0.2
-
-- name: WIP
-  uses: wip/action@v1.1.0
-
+--- 
+jobs: 
+  wip: 
+    runs-on: ubuntu-latest
+    steps: 
+      - 
+        env: ~
+        uses: wip/action@v1
+name: WIP
+true: 
+  pull_request: 
+    types: 
+      - opened
+      - synchronize
+      - reopened
+      - edited
+  
    script: 
     - "echo \"Hello World!\""
 >>>>>>> 939c83ac01455a3e2e5b271ce354b4478deac3fe
