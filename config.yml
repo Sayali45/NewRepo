@@ -1,4 +1,8 @@
 name: Issue Dashboard
 uses: ethomson/issue-dashboard@v1.0.2
+
+- name: WIP
+  uses: wip/action@v1.1.0
+
    script: 
     - "echo \"Hello World!\""
