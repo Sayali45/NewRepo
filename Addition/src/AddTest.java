@@ -8,7 +8,7 @@ public class AddTest
 	@Test
 	public void Test() {
 	
-		assertEquals( "error in Add()", 4, Add.add(1,4));
+		assertEquals( "error in Add()", 4, Add.add(1,2));
 	}
 
 }
